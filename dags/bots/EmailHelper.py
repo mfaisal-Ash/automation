@@ -4,11 +4,11 @@ def send():
     try:
         x=smtplib.SMTP('smtp.gmail.com',587)
         x.starttls()
-        x.login("sidiqfaisal30@gmail.com", "juva yapw wakj apxt")
+        x.login("Your_email", "Your_App_Passwords")
         subject="Testing"
         body="Testing Success"
         msg="Subject:{}\n\n{}".format(subject,body)
-        x.sendmail("sidiqfaisal30@gmail.com","mfaisalshidiq@gmail.com",msg)
+        x.sendmail("Sender","Receiver",msg)
         print("Successfully sent email")
     except Exception as exception:
         print(exception)

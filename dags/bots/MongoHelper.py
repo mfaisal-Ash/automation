@@ -54,7 +54,7 @@ def update_single_doc(collection_name,query,projection=None):
     return collection_data
 
 # if __name__ == "__main__":      
-    # update_single_doc("config",{"username":"sidiqfaisal30@gmail.com"},{"$set":{"name":"email_config"}})   
+    # update_single_doc("config",{"username":"your email"},{"$set":{"name":"email_config"}})   
     
 
 def insert_multiple_doc(collection_name,query,projection=None):
