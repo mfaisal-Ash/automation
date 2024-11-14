@@ -3,7 +3,7 @@ import pymongo
 def get_connection():
     db_name=None
     try:
-        connection_url =pymongo.MongoClient('mongodb://localhost:27017/')
+        connection_url =pymongo.MongoClient('mongodb+srv://Sal:admin123@sal.94xhv.mongodb.net/')
         db_name=connection_url["automation_config"]
         print(db_name)
     except Exception as exception:
@@ -37,9 +37,12 @@ def get_single_doc(collection_name,query,projection=None):
         print(exception)
     return collection_data
 
-if __name__ == "__main__":
-    get_single_doc("config",{"name":"email_config"},{"_id":0,"name":0})         
+# if __name__ == "__main__":
+#     get_single_doc("config",{"name":"email_config"},{"_id":0,"name":0})         
 #     get_single_doc("config",{"name":"Faisal"},{"_id":0})    
+
+
+get_single_document("test_config",{"name":"email_config"})
 
 def update_single_doc(collection_name,query,projection=None):
     collection_data=None
