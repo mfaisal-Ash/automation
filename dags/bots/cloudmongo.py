@@ -5,6 +5,6 @@ db = url["automation_config"]
 col = db["test_config"]
 
 execute_query=collection.find({})
-print(execute_query)
+print("concert value....>"+str(list(execute_query)))
 
 # EXPLORER 
